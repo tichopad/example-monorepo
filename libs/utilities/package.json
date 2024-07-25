@@ -2,8 +2,9 @@
   "name": "@em/utilities",
   "main": "src/index.js",
   "scripts": {
+    "format": "prettier --cache --write .",
     "lint": "eslint ./src/**/*.js --fix",
-    "format": "prettier --cache --write ."
+    "test": "vitest run"
   },
   "devDependencies": {
     "@em/eslint-config": "workspace:*",
