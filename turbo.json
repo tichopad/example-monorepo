@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "globalDependencies": ["prettier.config.mjs"],
+  "tasks": {
+    "dev": {
+      "persistent": true,
+      "cache": false
+    },
+    "format": {},
+    "lint": {
+      "dependsOn": ["format"]
+    }
+  }
+}

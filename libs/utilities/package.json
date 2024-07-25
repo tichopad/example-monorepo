@@ -1,0 +1,14 @@
+{
+  "name": "@em/utilities",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint ./src/**/*.js --fix",
+    "format": "prettier --cache --write ."
+  },
+  "devDependencies": {
+    "@em/eslint-config": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "vitest": "catalog:"
+  }
+}

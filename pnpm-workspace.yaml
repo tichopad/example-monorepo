@@ -1,0 +1,14 @@
+# Defines where to look for workspaces
+# See https://pnpm.io/pnpm-workspace_yaml
+packages:
+  - 'apps/*'
+  - 'components/*'
+  - 'configs/*'
+  - 'libs/*'
+
+# Defines package versions to be optionally used across the monorepo
+# See https://pnpm.io/catalogs
+catalog:
+  eslint: "9.7.0"
+  prettier: "3.3.3"
+  vitest: "2.0.4"

@@ -1,0 +1,10 @@
+# See https://prettier.io/docs/en/ignore
+# Prettier will ignore these files and folders
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/dist
+**/.turbo
+**/.yarn

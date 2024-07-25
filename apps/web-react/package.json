@@ -1,0 +1,26 @@
+{
+  "name": "@em/web-react",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint ./src/**/*.{js,jsx} --fix",
+    "format": "prettier --cache --write .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@em/utilities": "workspace:*",
+    "@em/fancy-button": "workspace:*",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@em/eslint-config": "workspace:*",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.1",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "vite": "5.3.4"
+  }
+}

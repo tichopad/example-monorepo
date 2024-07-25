@@ -1,0 +1,18 @@
+{
+  "name": "@em/rest-api",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "lint": "eslint ./src/**/*.js --fix",
+    "format": "prettier --cache --write ."
+  },
+  "dependencies": {
+    "@hono/node-server": "1.12.0",
+    "hono": "4.5.1"
+  },
+  "devDependencies": {
+    "@em/eslint-config": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:"
+  }
+}
