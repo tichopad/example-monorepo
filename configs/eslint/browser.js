@@ -1,11 +1,11 @@
-import pluginJs from '@eslint/js';
+import base from './base.js';
 import globals from 'globals';
 
 export default [
+  ...base,
   {
     languageOptions: {
       globals: globals.browser,
     },
   },
-  pluginJs.configs.recommended,
 ];
