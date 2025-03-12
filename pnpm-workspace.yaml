@@ -9,6 +9,8 @@ packages:
 # Defines package versions to be optionally used across the monorepo
 # See https://pnpm.io/catalogs
 catalog:
+  "@types/node": "22.13.10"
   eslint: "9.7.0"
   prettier: "3.3.3"
+  typescript: "5.8.2"
   vitest: "2.0.4"

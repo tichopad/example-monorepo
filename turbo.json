@@ -3,6 +3,9 @@
   "ui": "tui",
   "globalDependencies": ["prettier.config.mjs"],
   "tasks": {
+    "build": {
+      "outputs": ["dist/*", "tsconfig.tsbuildinfo"]
+    },
     "dev": {
       "persistent": true,
       "cache": false

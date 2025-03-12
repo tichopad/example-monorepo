@@ -2,8 +2,9 @@
   "name": "@em/rest-api",
   "type": "module",
   "scripts": {
-    "dev": "node --watch src/index.js",
-    "lint": "eslint ./src/**/*.js --fix",
+    "build": "tsc -b -v",
+    "dev": "node --watch src/index.ts",
+    "lint": "eslint ./src/**/*.ts --fix",
     "format": "prettier --cache --write ."
   },
   "dependencies": {
@@ -12,7 +13,10 @@
   },
   "devDependencies": {
     "@em/eslint-config": "workspace:*",
+    "@em/tsconfig": "workspace:*",
+    "@types/node": "catalog:",
     "eslint": "catalog:",
-    "prettier": "catalog:"
+    "prettier": "catalog:",
+    "typescript": "catalog:"
   }
 }

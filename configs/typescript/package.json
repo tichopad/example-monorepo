@@ -1,0 +1,16 @@
+{
+  "name": "@em/tsconfig",
+  "type": "module",
+  "exports": {
+    ".": "./",
+    "./base": "./base.json",
+    "./browser": "./browser.json",
+    "./node": "./node.json"
+  },
+  "scripts": {
+    "format": "prettier --cache --write ."
+  },
+  "devDependencies": {
+    "prettier": "catalog:"
+  }
+}

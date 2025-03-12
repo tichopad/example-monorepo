@@ -1,15 +1,19 @@
 {
   "name": "@em/utilities",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
+    "build": "tsc -b -v",
     "format": "prettier --cache --write .",
     "lint": "eslint ./src/**/*.js --fix",
     "test": "vitest run"
   },
   "devDependencies": {
     "@em/eslint-config": "workspace:*",
+    "@em/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
+    "typescript": "catalog:",
     "vitest": "catalog:"
   }
 }
