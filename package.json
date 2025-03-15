@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "clean-build": "rm -rf ./**/*/tsconfig.tsbuildinfo ./**/*/dist/*",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test"
   },
   "devDependencies": {
-    "turbo": "2.0.9"
+    "turbo": "2.4.4"
   }
 }

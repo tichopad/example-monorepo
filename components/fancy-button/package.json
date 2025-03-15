@@ -1,8 +1,11 @@
 {
   "name": "@em/fancy-button",
-  "main": "src/FancyButton.jsx",
+  "main": "dist/FancyButton.jsx",
+  "type": "module",
   "scripts": {
-    "lint": "eslint ./src/**/*.{js,jsx} --fix",
+    "build": "tsc -b -v",
+    "build-trace": "tsc -p ./ --generateTrace ./.trace_output",
+    "lint": "eslint ./src/**/*.{ts,tsx} --fix",
     "format": "prettier --cache --write ."
   },
   "peerDependencies": {
@@ -10,9 +13,12 @@
   },
   "devDependencies": {
     "@em/eslint-config": "workspace:*",
+    "@em/tsconfig": "workspace:*",
+    "@types/react": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "react": "18"
+    "react": "18",
+    "typescript": "catalog:"
   },
   "dependencies": {
     "react-canvas-confetti": "2.0.7"

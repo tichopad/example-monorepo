@@ -4,8 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "tsc -b -v",
+    "build-trace": "tsc -p ./ --generateTrace ./.trace_output",
     "format": "prettier --cache --write .",
-    "lint": "eslint ./src/**/*.js --fix",
+    "lint": "eslint ./src/**/*.ts --fix",
     "test": "vitest run"
   },
   "devDependencies": {

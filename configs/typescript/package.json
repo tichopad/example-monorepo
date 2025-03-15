@@ -4,7 +4,7 @@
   "exports": {
     ".": "./",
     "./base": "./base.json",
-    "./browser": "./browser.json",
+    "./react-web": "./react-web.json",
     "./node": "./node.json"
   },
   "scripts": {

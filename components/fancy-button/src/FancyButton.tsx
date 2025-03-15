@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState, type PropsWithChildren } from 'react';
 import Fireworks from 'react-canvas-confetti/dist/presets/fireworks';
 import styles from './FancyButton.module.css';
 
 /**
  * Not your typical button.
  */
-export function FancyButton({ children }) {
+export function FancyButton({ children }: PropsWithChildren) {
   const [showConfetti, setShowConfetti] = useState(false);
 
   return (

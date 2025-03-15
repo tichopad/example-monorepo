@@ -4,6 +4,7 @@
   "globalDependencies": ["prettier.config.mjs"],
   "tasks": {
     "build": {
+      "dependsOn": ["^build"],
       "outputs": ["dist/*", "tsconfig.tsbuildinfo"]
     },
     "dev": {

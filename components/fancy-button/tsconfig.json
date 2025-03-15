@@ -1,5 +1,5 @@
 {
-  "extends": "@em/tsconfig/node",
+  "extends": "@em/tsconfig/react-web",
   "compilerOptions": {
     "outDir": "dist"
   },

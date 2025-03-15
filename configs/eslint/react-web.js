@@ -2,10 +2,11 @@ import react from 'eslint-plugin-react';
 import globals from 'globals';
 import browser from './browser.js';
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   ...browser,
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     ...react.configs.flat.recommended,
     languageOptions: {
       ...react.configs.flat.recommended.languageOptions,
